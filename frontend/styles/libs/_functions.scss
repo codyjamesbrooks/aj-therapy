@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "sass:list";
+@use "./vars" as v;
+
 /// Removes a specific item from a list.
 /// @author Hugo Giraudel
 /// @param {list} $list List.
@@ -42,12 +46,12 @@
 /// @return {string} Value.
 @function val($map, $keys...) {
 
-	@if nth($keys, 1) == null {
+	@if list.nth($keys, 1) == null {
 		$keys: remove-nth($keys, 1);
 	}
 
 	@each $key in $keys {
-		$map: map-get($map, $key);
+		$map: map.get($map, $key);
 	}
 
 	@return $map;
@@ -78,8 +82,8 @@
 /// Gets a palette value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _palette($keys...) {
-	@return val($palette, $keys...);
+@function palette_values($keys...) {
+	@return val(v.$palette, $keys...);
 }
 
 /// Gets a size value.

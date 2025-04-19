@@ -1,11 +1,11 @@
 @use "sass:map";
-@use './libs/vars.scss';
-@use './libs/functions.scss';
-@use './libs/mixins.scss';
-@use './libs/vendor.scss';
-@use './libs/breakpoints.scss' as *;
-@use './libs/html-grid.scss';
-@use './css/fontawesome-all.min.css';
+@use './libs/vars';
+@use './libs/functions' as *;
+@use './libs/mixins';
+@use './libs/vendor' as *;
+@use './libs/breakpoints' as *;
+@use './libs/html-grid';
+@use './css/fontawesome-all.min.css' as *;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
 /*
@@ -93,4 +93,32 @@ input, select, textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
+}
+/* Basic */
+
+@-ms-viewport {
+  width: device-width;
+}
+
+// Set box model to border-box.
+// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  background: palette_values(bg);
+
+  // Stops initial animations until page loads.
+    &.is-preload {
+      *, *:before, *:after {
+        @include vendor('animation', 'none !important');
+        @include vendor('transition', 'none !important');
+      }
+    }
+
 }
