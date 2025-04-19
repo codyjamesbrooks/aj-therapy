@@ -61,22 +61,22 @@
 /// Gets a duration value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _duration($keys...) {
-	@return val($duration, $keys...);
+@function duration_values($keys...) {
+	@return val(v.$duration, $keys...);
 }
 
 /// Gets a font value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _font($keys...) {
-	@return val($font, $keys...);
+@function font_values($keys...) {
+	@return val(v.$font, $keys...);
 }
 
 /// Gets a misc value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _misc($keys...) {
-	@return val($misc, $keys...);
+@function misc_values($keys...) {
+	@return val(v.$misc, $keys...);
 }
 
 /// Gets a palette value.
@@ -89,6 +89,6 @@
 /// Gets a size value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _size($keys...) {
-	@return val($size, $keys...);
+@function size_values($keys...) {
+	@return val(v.$size, $keys...);
 }
