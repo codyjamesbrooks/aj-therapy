@@ -1080,6 +1080,7 @@ button,
     width: 60%;
   }
 
+  &.reversed,
   &:nth-child(2n) {
     @include vendor('flex-direction', 'row-reverse');
   }
@@ -1119,12 +1120,14 @@ button,
       text-align: center;
       width: 100%;
     }
+    .content:empty {display: none;}
   }
 
   @include breakpoint('<=small') {
     .content {
       @include padding(3em, 2em);
     }
+    .content:empty {display: none;}
   }
 }
 
@@ -1730,6 +1733,7 @@ body.is-preload {
   .inner {
     @include vendor('display', 'flex');
     max-width: 45em;
+    align-items: center;
 
     header {
       @include vendor('order', '1');
@@ -1779,6 +1783,7 @@ body.is-preload {
     @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/banner.jpg")'));
 
     &.about { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/about.jpg")'));}
+    &.specialties { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties.jpg")'));}
 
     background-attachment: fixed;
     background-position: center center;
