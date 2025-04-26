@@ -17,5 +17,16 @@
     "read-cache": "^1.0.0",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2"
+  },
+  "dependencies": {
+    "breakpoints-js": "^1.0.6",
+    "browser": "^0.2.6",
+    "child_process": "^1.0.2",
+    "jquery": "^3.7.1",
+    "jquery-ui": "^1.14.1",
+    "jquery.scrollex": "^0.2.1",
+    "jquery.scrolly": "^0.0.1",
+    "querystring": "^0.2.1",
+    "url": "^0.11.4"
   }
 }
