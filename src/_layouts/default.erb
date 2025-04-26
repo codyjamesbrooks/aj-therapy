@@ -4,11 +4,11 @@
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
   <body class="is-preload <%= data.layout %> <%= data.page_class %>">
-    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
-    <main>
+    <div id="page-wrapper">
+      <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
       <%= yield %>
-    </main>
+    </div>
 
     <%= render "footer", metadata: site.metadata %>
   </body>
