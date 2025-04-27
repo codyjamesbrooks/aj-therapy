@@ -3,7 +3,9 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
-  <body class="is-preload <%= data.layout %> <%= data.page_class %>">
+  <body data-controller="menu"
+    data-menu-open-class="is-menu-visible"
+    class="is-preload <%= data.layout %> <%= data.page_class %>">
 
     <div id="page-wrapper">
       <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>

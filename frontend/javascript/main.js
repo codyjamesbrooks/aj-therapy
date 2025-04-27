@@ -1,3 +1,4 @@
+import jQuery from "jquery";
 import breakpoints from "breakpoints-js";
 // import browser from "browser";
 /*
@@ -46,26 +47,11 @@ function detectMob() {
 	}
 
 	// Scrolly.
-		// $('.scrolly')
-		// 	.scrolly({
-		// 		speed: 1500,
-		// 		offset: $header.outerHeight()
-		// 	});
-
-	// Menu.
-		// $('#menu')
-		// 	.append('<a href="#menu" class="close"></a>')
-		// 	.appendTo($body)
-		// 	.panel({
-		// 		delay: 500,
-		// 		hideOnClick: true,
-		// 		hideOnSwipe: true,
-		// 		resetScroll: true,
-		// 		resetForms: true,
-		// 		side: 'right',
-		// 		target: $body,
-		// 		visibleClass: 'is-menu-visible'
-		// 	});
+	// $('.scrolly')
+	// 	.scrolly({
+	// 		speed: 1500,
+	// 		offset: $header.outerHeight()
+	// 	});
 
 	// Header.
 		// if ($banner.length > 0

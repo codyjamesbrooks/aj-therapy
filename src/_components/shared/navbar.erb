@@ -1,16 +1,24 @@
-<header id="header" class="alt">
+<header id="header">
   <h1><a href="<%= relative_url '/' %>">Anna Joseph Therapy</a></h1>
-  <nav id="nav">
+  <nav
+    id="nav">
     <ul>
-      <li class="special">
-        <a href="#menu" class="menuToggle"><span>Menu</span></a>
-        <div id="menu">
+      <li data-menu-target="nav"
+        class="special">
+        <a href="#menu" data-action="menu#toggle"
+          class="menuToggle"><span>Menu</span>
+        </a>
+        <div data-menu-target="menu" id="menu">
+          <a data-action="menu#toggle"
+            href="#" class="close">
+            <%= svg 'images/close.svg' %>
+          </a>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Specialties</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="<%= relative_url '/' %>">Home</a></li>
+            <li><a href="<%= relative_url '/about' %>">About</a></li>
+            <li><a href="<%= relative_url '/specialties' %>">Specialties</a></li>
+            <li><a href="<%= relative_url '/faq' %>">FAQs</a></li>
+            <li><a href="<%= relative_url '/contact' %>">Contact</a></li>
           </ul>
         </div>
       </li>

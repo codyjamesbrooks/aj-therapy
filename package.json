@@ -19,6 +19,7 @@
     "sass-loader": "^13.3.2"
   },
   "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
     "breakpoints-js": "^1.0.6",
     "browser": "^0.2.6",
     "child_process": "^1.0.2",
