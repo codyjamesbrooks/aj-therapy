@@ -41,25 +41,7 @@ title: Contact
   <section id="contact-form" class="wrapper style5">
     <div class="inner gtr-uniform">
       <h3>Send me an email</h3>
-      <div class="col-8 col-12-xsmall">
-        <form method="post" action="#" id="contact-form">
-          <div class="input-group">
-            <input type="text" name="name" id="name" value="" placeholder="Your Name" />
-          </div>
-          <div class="input-group">
-            <input type="email" name="email" id="email" value="" placeholder="Your Email" />
-          </div>
-          <div class="input-group">
-            <input type="text" name="subject" id="subject" value="" placeholder="Subject" />
-          </div>
-          <div class="input-group">
-            <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-          </div>
-          <div class="input-group">
-            <input type="submit" value="Send Message" class="primary" />
-          </div>
-        </form>
-      </div>
+      <%= render "contact_form" %>
     </div>
   </section>
 </article>
