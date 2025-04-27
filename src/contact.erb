@@ -1,0 +1,62 @@
+---
+layout: default
+title: Contact
+---
+<article id="main">
+
+  <header class="contact">
+    <h2>Contact</h2>
+  </header>
+
+  <section class="wrapper style5">
+    <div class="inner">
+      <h3>My Information</h3>
+      <p class="flex-row">
+        <%= svg "images/pin.svg",class: "icon" %>
+        Office in the Denver metro area
+      </p>
+      <p class="flex-row">
+        <%= svg "images/email.svg",class: "icon" %>
+        anna@annajosephtherapy.com
+      </p>
+      <p class="flex-row">
+        <%= svg "images/phone.svg",class: "icon" %>
+        (720) 574-0527
+      </p>
+      <p class="flex-row">
+        <%= svg "images/fax.svg",class: "icon" %>
+        (720) 702-0166
+      </p>
+    </div>
+  </section>
+
+  <section class="wrapper style5">
+    <div class="inner gtr-uniform">
+      <div class="row col-4 col-12-xsmall justify-center">
+        <h4>
+          Have a question? <br />
+          Want to schedule a consultation? <br />
+        </h4>
+      </div>
+      <div class="col-8 col-12-xsmall">
+        <form method="post" action="#" id="contact-form">
+          <div class="input-group">
+            <input type="text" name="name" id="name" value="" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" id="email" value="" placeholder="Email" />
+          </div>
+          <div class="input-group">
+            <input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+          </div>
+          <div class="input-group">
+            <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+          </div>
+          <div class="input-group">
+            <input type="submit" value="Send Message" class="primary" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</article>

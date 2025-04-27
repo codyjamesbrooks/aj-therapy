@@ -611,6 +611,15 @@ input[type="radio"] {
   }
 }
 
+.flex-row {
+  @include vendor('display', 'flex');
+  @include vendor('align-items', 'center');
+
+  .icon {
+    margin-right: 1em;
+  }
+}
+
 /* Image */
 
 .image {
@@ -1339,6 +1348,8 @@ button,
     }
   }
 
+
+
   &.alt {
     padding: 0;
   }
@@ -1785,6 +1796,7 @@ body.is-preload {
     &.about { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/about.jpg")'));}
     &.specialties { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties.jpg")'));}
     &.faq { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/faq.jpg")'));}
+    &.contact { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/contact.jpeg")'));}
 
     background-attachment: fixed;
     background-position: center center;
@@ -1940,5 +1952,11 @@ body.is-mobile {
     #footer {
       background-color: color.adjust(palette_values(bg), $lightness: -8%);
     }
+  }
+}
+
+#contact-form {
+  div.input-group {
+    margin: 1em 0;
   }
 }
