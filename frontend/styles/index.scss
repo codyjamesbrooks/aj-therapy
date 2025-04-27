@@ -1870,6 +1870,27 @@ body.is-mobile {
     }
   }
 
+  .links {
+    @include vendor('display', 'flex');
+    @include vendor('flex-wrap', 'wrap');
+    @include vendor('justify-content', 'center');
+    list-style: none;
+    margin: 0 0 size_values(element-margin) 0;
+    padding: 0;
+
+    li {
+      margin: 0 1em 1em 0;
+
+      a {
+        color: palette_values(fg-light);
+
+        &:hover {
+          color: palette_values(fg);
+        }
+      }
+    }
+  }
+
   .copyright {
     color: palette_values(fg-light);
     font-size: 0.8em;
@@ -1957,6 +1978,6 @@ body.is-mobile {
 
 #contact-form {
   div.input-group {
-    margin: 1em 0;
+    margin: 1.5em 0;
   }
 }
