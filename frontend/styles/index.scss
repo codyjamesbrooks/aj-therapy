@@ -1013,6 +1013,10 @@ button,
       &:nth-child(#{$i}) {
         background-color: rgba(0,0,0, $j);
       }
+      &:hover {
+        color: #2e3842;
+        background-color: color.adjust(rgba(0,0,0, $j), $lightness: -1%);
+      }
     }
 
     &:before {

@@ -10,7 +10,7 @@ page_class: landing
     <p>Anna Joseph LCSW, MPH<br />
 
     <ul class="actions special">
-      <li><a href="<%= relative_url '/contact' %>" class="button primary">Contact Me</a></li>
+      <li><a href="<%= relative_url '/contact#contact-form' %>" class="button primary">Contact Me</a></li>
     </ul>
   </div>
   <a href="#one" class="more scrolly">Learn More</a>
@@ -21,7 +21,41 @@ page_class: landing
     <header class="major">
       <p>I offer individual and couples therapy. I specialize in sex therapy, anxiety/OCD, healthcare workers and emergency responders. I have been a Licensed Clinical Social Worker (LCSW) in Colorado since 2019. I hold a dual Master of Social Work (MSW) and Master of Public Health (MPH) degree from the University of Michigan.</p>
       <p>Interested in learning more?</p>
-      <a href="<%= relative_url '/contact' %>" class="button primary">Request a consultation</a>
+      <a href="<%= relative_url '/contact#contact-form' %>" class="button primary">Request a consultation</a>
     </header>
+  </div>
+</section>
+
+<section id="three" class="wrapper style3 special">
+  <div class="inner">
+    <header class="major">
+      <h3>Specialties</h3>
+    </header>
+    <ul class="features">
+      <li>
+        <a href="<%= relative_url '/specialties#healthcare-workers' %>">
+          <h4>Healthcare workers</h4>
+      </li></a>
+      <li>
+        <a href="<%= relative_url '/specialties#sex-therapy' %>">
+          <h4>Sex therapy</h4>
+        </a>
+      </li>
+      <li>
+        <a href="<%= relative_url '/specialties#couples-therapy' %>">
+          <h4>Couples therapy</h4>
+        </a>
+      </li>
+      <li>
+        <a href="<%= relative_url '/specialties#anxiety-and-ocd' %>">
+          <h4>Anxiety and OCD</h4>
+        </a>
+      </li>
+      <li>
+        <a href="<%= relative_url '/specialties#emergency-responders' %>">
+          <h4>Emergency Responders</h4>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
