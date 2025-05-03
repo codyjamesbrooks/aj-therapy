@@ -1907,6 +1907,9 @@ body.is-mobile {
   }
 
   .copyright {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('align-items', 'center');
     color: palette_values(fg-light);
     font-size: 0.8em;
     letter-spacing: size_values(letter-spacing-alt);
@@ -1915,10 +1918,8 @@ body.is-mobile {
     text-transform: uppercase;
 
     li {
-      border-left: solid 1px palette_values(fg-light);
-      display: inline-block;
       line-height: 1em;
-      margin-left: 1em;
+      margin-bottom: 1em;
       padding-left: 1em;
 
       &:first-child {
