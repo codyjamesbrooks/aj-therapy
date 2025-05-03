@@ -12,10 +12,8 @@ function detectMob() {
 
 (function($) {
 	var	$window = $(window),
-		$body = $('body'),
-		$wrapper = $('#page-wrapper'),
-		$banner = $('#banner'),
-		$header = $('#header');
+		$body = $('body')
+
 
 	// Breakpoints.
 	breakpoints({
@@ -40,18 +38,20 @@ function detectMob() {
 		breakpoints.on('>medium', function() {
 			$body.removeClass('is-mobile');
 		});
-
 		breakpoints.on('<=medium', function() {
 			$body.addClass('is-mobile');
 		});
 	}
 
-	// Scrolly.
-	// $('.scrolly')
-	// 	.scrolly({
-	// 		speed: 1500,
-	// 		offset: $header.outerHeight()
-	// 	});
+	$('.scrolly').on('click', function(event) {
+    event.preventDefault();
+
+    const target = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 1000);
+  });
 
 	// Header.
 		// if ($banner.length > 0
