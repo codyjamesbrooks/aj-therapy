@@ -1002,9 +1002,13 @@ button,
 
   li {
     > a {
-      @include padding(4em, 4em, (0,0,0,2em));
-      display: block;
+      @include vendor('display', 'flex');
+      @include vendor('justify-content', 'center');
+      @include vendor('align-items', 'center');
+      min-height: 150px;
       border: none;
+
+      h4 { margin: 0;}
     }
     position: relative;
     text-align: left;
@@ -1328,15 +1332,13 @@ button,
     }
 
   // Features
-
-    .features {
-      li {
-        @include breakpoint('<=small') {
-          border-top-color: palette_values($p, border);
-        }
+  .features {
+    li {
+      @include breakpoint('<=small') {
+        border-top-color: palette_values($p, border);
       }
     }
-
+  }
 }
 
 .wrapper {
