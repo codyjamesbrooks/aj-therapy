@@ -1812,9 +1812,13 @@ body.is-preload {
     @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/banner.jpg")'));
 
     &.about { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/about.jpg")'));}
-    &.specialties { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties.jpg")'));}
     &.faq { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/faq.jpg")'));}
     &.contact { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/contact.jpeg")'));}
+    &.specialties-healthcare-workers { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties-hcw.jpg")'));}
+    &.specialties-sex-therapy { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties-st.jpg")'));}
+    &.specialties-couples-therapy { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties-ct.jpeg")'));}
+    &.specialties-anxiety-ocd { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties-aocd.jpg")'));}
+    &.specialties-emergency-responders { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/specialties-er.jpg")'));}
 
     background-attachment: fixed;
     background-position: center center;
