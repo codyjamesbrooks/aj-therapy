@@ -2,6 +2,7 @@
   "name": "aj-therapy-2",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "yarn@1.22.19",
   "scripts": {
     "esbuild": "node esbuild.config.js --minify",
     "esbuild-dev": "node esbuild.config.js --watch"
