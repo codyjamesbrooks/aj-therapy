@@ -1907,7 +1907,9 @@ body.is-mobile {
 /* Footer */
 
 #footer {
-  @include padding(6em, 0);
+  @include vendor('display', 'flex');
+  @include vendor('justify-content', 'space-between');
+  @include padding(6em, 1.5em);
   background-color: color.adjust(palette_values(bg), $lightness: -8%);
   text-align: center;
 
@@ -1923,31 +1925,31 @@ body.is-mobile {
     }
   }
 
+  h5 {
+    margin-bottom: .5em;
+    text-align: right;
+  }
+
   .links {
-    @include vendor('display', 'flex');
-    @include vendor('flex-wrap', 'wrap');
-    @include vendor('justify-content', 'center');
     list-style: none;
     margin: 0 0 size_values(element-margin) 0;
-    padding: 0;
+
+    &.pages {
+      text-align: left;
+    }
+    &.specialties {
+      text-align: right;
+    }
 
     li {
-      margin: 0 1em 1em 0;
-
       a {
         color: palette_values(fg-light);
-
-        &:hover {
-          color: palette_values(fg);
-        }
+        &:hover { color: palette_values(fg); }
       }
     }
   }
 
   .copyright {
-    @include vendor('display', 'flex');
-    @include vendor('flex-direction', 'column');
-    @include vendor('align-items', 'center');
     color: palette_values(fg-light);
     font-size: 0.8em;
     letter-spacing: size_values(letter-spacing-alt);
@@ -1956,15 +1958,10 @@ body.is-mobile {
     text-transform: uppercase;
 
     li {
+      text-align: left;
       line-height: 1em;
       margin-bottom: 1em;
       padding-left: 1em;
-
-      &:first-child {
-        border-left: 0;
-        margin-left: 0;
-        padding-left: 0;
-      }
 
       a {
         color: inherit;
@@ -1977,7 +1974,6 @@ body.is-mobile {
       @include breakpoint('<=xsmall') {
         border: 0;
         display: block;
-        line-height: 1.65em;
         margin: 0;
         padding: 0.5em 0;
       }
@@ -1986,10 +1982,42 @@ body.is-mobile {
 
   @include breakpoint('<=medium') {
     @include padding(4em, 3em);
+    @include vendor('flex-wrap', 'wrap');
+
+    .copyright {
+      width: 100%;
+      order: 3;
+    }
+
+    .pages {
+      h5 { text-align: left; }
+      ul.links.pages {
+        padding-left: 0 !important;
+        li { padding-left: 0 !important; }
+      }
+    }
   }
 
   @include breakpoint('<=small') {
     @include padding(3em, 2em);
+    .specialties {
+      h5 { text-align: right; }
+      ul.links.specialties {
+        text-align: right;
+      }
+    }
+  }
+
+  @include breakpoint('<=xsmall') {
+    @include padding(2em, 1.5em);
+    .specialties {
+      h5 { text-align: left; }
+      ul.links.specialties {
+        text-align: left;
+        padding-left: 0 !important;
+        li { padding-left: 0 !important; }
+      }
+    }
   }
 }
 
