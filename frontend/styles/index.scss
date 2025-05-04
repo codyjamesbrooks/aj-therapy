@@ -2037,10 +2037,10 @@ body.is-mobile {
   margin: 0 0 size_values(element-margin) 0;
   padding: 0;
 
-  div.form { width: 65%;}
+  div.form { width: 45%;}
   div.copy {
     padding-top: 1.3em;
-    width: 30%;
+    width: 45%;
   }
 
   @include breakpoint('<=medium') {
