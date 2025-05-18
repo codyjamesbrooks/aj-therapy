@@ -1737,7 +1737,7 @@ body.is-menu-visible {
 
   @include breakpoint('<=small') {
     @include padding(7em, 3em);
-    height: auto;
+    height: 100vh;
     min-height: 0;
 
     h2 {
@@ -1830,6 +1830,7 @@ body.is-preload {
   > header {
     @include padding(12em, 0);
     @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/banner.jpg")'));
+    height: 75vh;
 
     &.about { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/about.jpg")'));}
     &.faq { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/faq.jpg")'));}
@@ -1876,10 +1877,13 @@ body.is-preload {
 
     @include breakpoint('<=small') {
       @include padding(5em, 3em);
+      @include vendor('display', 'flex');
+      @include vendor('flex-direction', 'column');
+      @include vendor('justify-content', 'center');
+      @include vendor('align-items', 'center');
 
       h2 {
-        font-size: 1.25em;
-        margin: 0 0 (size_values(element-margin) * 0.5) 0;
+        font-size: 1.25em
       }
     }
   }
