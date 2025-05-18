@@ -7,7 +7,8 @@
     data-menu-open-class="is-menu-visible"
     class="is-preload <%= data.layout %> <%= data.page_class %>">
 
-    <div id="page-wrapper">
+    <div role="main"
+      id="page-wrapper">
       <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
       <%= yield %>
     </div>

@@ -1,7 +1,6 @@
 <header id="header">
   <h1><a href="<%= relative_url '/' %>">Anna Joseph Therapy</a></h1>
-  <nav
-    id="nav">
+  <nav role="navigation" id="nav">
     <ul>
       <li data-menu-target="nav"
         class="special">
@@ -10,7 +9,8 @@
         </a>
         <div data-menu-target="menu" id="menu">
           <a data-action="menu#toggle"
-            href="#" class="close">
+            href="#" class="close"
+            aria-label="Close menu">
             <%= svg 'images/close.svg' %>
           </a>
           <ul>
