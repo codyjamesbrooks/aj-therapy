@@ -1834,8 +1834,12 @@ body.is-preload {
 #main {
   > header {
     @include padding(12em, 0);
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('justify-content', 'center');
+    @include vendor('align-items', 'center');
     @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/banner.jpg")'));
-    height: 75vh;
+    height: 60vh;
 
     &.about { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/about.jpg")'));}
     &.faq { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/faq.jpg")'));}
@@ -1882,10 +1886,6 @@ body.is-preload {
 
     @include breakpoint('<=small') {
       @include padding(5em, 3em);
-      @include vendor('display', 'flex');
-      @include vendor('flex-direction', 'column');
-      @include vendor('justify-content', 'center');
-      @include vendor('align-items', 'center');
 
       h2 {
         font-size: 1.25em
