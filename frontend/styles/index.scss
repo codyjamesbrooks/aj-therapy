@@ -1718,6 +1718,11 @@ body.is-menu-visible {
       position: absolute;
       width: 1.5em;
     }
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
   }
 
   &:after {

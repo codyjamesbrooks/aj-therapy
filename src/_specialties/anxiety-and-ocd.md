@@ -12,7 +12,7 @@
   <section class="wrapper style5">
     <div class="inner">
       <section>
-        <h4>Anxiety and OCD</h4>
+        <h3>Anxiety and OCD</h3>
         <p>Anxiety and OCD can feel overwhelming, like your mind is spinning out of control with no way to stop it. You may logically recognize that anxious or obsessive thoughts and compulsive behaviors are excessive or out of proportion, yet they still hold power over you. This struggle can be exhausting.</p>
         <p>I have extensive experience working with individuals struggling with anxiety and OCD, and I use Acceptance and Commitment Therapy (ACT) to help people change their relationship with their thoughts and emotions and move towards their values. Often, it’s not the thoughts themselves that fuel anxiety and OCD, but the way we react to them—fighting against them, trying to push them away, or letting them dictate our actions. My approach helps you step out of that cycle, develop new ways of relating to your mind, and regain a sense of freedom in your life again.</p>
       </section>
