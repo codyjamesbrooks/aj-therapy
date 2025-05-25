@@ -3,8 +3,9 @@
 <%= render "seo_meta" %>
 <% resource_title = strip_html(strip_newlines(title)) %>
 <title><% if resource_title != "Index" %><%= resource_title %> | <%= metadata.title %><% else %><%= metadata.title %><% end %></title>
-
 <meta name="description" content="<%= metadata.description %>" />
+
+<link rel="icon" type="image/x-icon" href="<%= relative_url 'images/favicon.ico' %>">
 
 <link rel="stylesheet" href="<%= webpack_path :css %>" />
 <script src="<%= webpack_path :js %>" defer></script>
