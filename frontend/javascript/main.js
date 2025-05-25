@@ -7,7 +7,7 @@ import breakpoints from "breakpoints-js";
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 function detectMob() {
-	return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+	return ( ( window.innerWidth <= 800 ) || ( window.innerHeight <= 600 ) );
 }
 
 (function($) {
