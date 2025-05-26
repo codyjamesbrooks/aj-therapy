@@ -1869,6 +1869,8 @@ body.is-preload {
 
     @include breakpoint('<=xlarge') {
       @include padding(10em, 0);
+      &.about { background-position: center 65%; }
+      &.contact { background-position: center 10%; }
     }
 
     @include breakpoint('<=large') {
