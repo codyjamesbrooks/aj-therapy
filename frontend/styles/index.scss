@@ -1742,7 +1742,7 @@ body.is-menu-visible {
 
   @include breakpoint('<=small') {
     @include padding(7em, 3em);
-    height: auto;
+    height: 90vh;
     min-height: 0;
 
     h2 {
@@ -1750,10 +1750,6 @@ body.is-menu-visible {
     }
 
     br {
-      display: none;
-    }
-
-    .more {
       display: none;
     }
   }
@@ -1834,8 +1830,12 @@ body.is-preload {
 #main {
   > header {
     @include padding(12em, 0);
-    @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/banner.jpg")'));
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('justify-content', 'center');
+    @include vendor('align-items', 'center');
 
+    @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/banner.jpg")'));
     &.about { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/about.jpg")'));}
     &.faq { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/faq.jpg")'));}
     &.contact { @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("./css/images/banners/contact.jpeg")'));}
@@ -1893,7 +1893,8 @@ body.is-preload {
 body.is-mobile {
   #main {
     > header {
-      background-attachment: scroll;
+      height: 65vh;
+      background-attachment: local;
     }
   }
 
