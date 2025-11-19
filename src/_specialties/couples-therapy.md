@@ -1,6 +1,6 @@
 ---
   layout: default
-  title: Speciality - Couples therapy
+  title: Specialty - Couples therapy
 ---
 <article id="main">
 

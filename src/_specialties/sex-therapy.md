@@ -1,6 +1,6 @@
 ---
   layout: default
-  title: Speciality - Sex therapy
+  title: Specialty - Sex therapy
 ---
 <article id="main">
 

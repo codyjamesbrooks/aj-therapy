@@ -1,6 +1,6 @@
 ---
   layout: default
-  title: Speciality - Emergency responders
+  title: Specialty - Emergency responders
 ---
 <article id="main">
 
