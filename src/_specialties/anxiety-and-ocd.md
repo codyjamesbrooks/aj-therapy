@@ -1,6 +1,6 @@
 ---
   layout: default
-  title: Speciality - Anxiety and OCD
+  title: Specialty - Anxiety and OCD
 ---
 <article id="main">
 

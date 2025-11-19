@@ -1,6 +1,6 @@
 ---
   layout: default
-  title: Speciality - Healthcare workers
+  title: Specialty - Healthcare workers
 ---
 <article id="main">
 
